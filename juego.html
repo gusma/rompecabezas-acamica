@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>BMO Arcade</title>
+    <title>Rompecabezas - Gustavo malamud</title>
     <link rel="stylesheet" href="css/juego.css">
   </head>
   <body>
@@ -11,15 +11,20 @@
       <div id="titulo">
       </div>
       <div id="instrucciones">
+        <h1 class="bienvenido"><span>BIENVENIDO AL ROMPECABEZAS</span></h1>
+        <h2>Instrucciones</h2>
         <ul id="lista-instrucciones">
         </ul>
       </div>
       <div id="objetivo">
         <div class="texto-centrado">
+          <img src="images/final.png" class="imagen-final" alt="Resultado final del rompecabezas">
           
         </div>
       </div>
       <div id="ultimo-mov">
+        
+        <h1>Ultimo movimiento</h1>
         <div id="flecha" class="texto-centrado">
           
         </div>
@@ -28,11 +33,50 @@
     </div>
     <div class="col-60">
       <div id="juego">
+          <div id="pieza1" class="pieza">
+              <img src="images/10.jpg" alt="">
+            </div>
+            <div id="pieza2" class="pieza">
+              <img src="images/20.jpg" alt="">
+            </div>
+            <div id="pieza3" class="pieza">
+              <img src="images/30.jpg" alt="">
+            </div>
+            <div id="pieza4" class="pieza">
+              <img src="images/40.jpg" alt="">
+            </div>
+            <div id="pieza5" class="pieza">
+              <img src="images/50.jpg" alt="">
+            </div>
+            <div id="pieza6" class="pieza">
+              <img src="images/60.jpg" alt="">
+            </div>
+            <div id="pieza7" class="pieza">
+              <img src="images/70.jpg" alt="">
+            </div>
+            <div id="pieza8" class="pieza">
+              <img src="images/80.jpg" alt="">
+            </div>
+            <div id="pieza9" class="pieza">
+            </div>
       </div>
+    </div>
+
+    <div id="audioplayer">
+       <div>
+        <audio controls>
+            <source src="http://rompecabezas-acamica.surge.sh/audio.mp3" type="audio/mpeg">
+            Your browser does not support the audio element.
+          </audio>
+       </div>
+       <div class="controlx"><a href="#" onclick="hideAudio()">X</a></div>
+          
     </div>
     <div id="footer">
       
     </div>
     <script src="js/juego.js"></script>
+    <script src="js/sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
   </body>
 </html>
